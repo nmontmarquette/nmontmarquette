@@ -1,4 +1,4 @@
-# Personnel - Compilateur de statistiques pour la platforme Disnat
+# Compilateur de statistiques pour la plateforme Disnat
 
 | Descriptions                                                                                 | Technologies              |
 |----------------------------------------------------------------------------------------------|---------------------------|

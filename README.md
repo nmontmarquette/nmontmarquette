@@ -14,8 +14,8 @@
 
 # Sommaire professionnel
 
-* [1997-2000, Weighpack/Paxiom, C/C++, microcontroleurs industriels Zilog](fr_ca/cv_1997_2000_weighpack_paxiom.md)
-
+* [2000-2009, Thought Technology, C/C++, Win32, COM, COM+, PalmOS, Windows CE, microcontroleurs](fr_ca/cv_2000_2010_tt_infiti_series.md)
+* [1997-200, Weighpack/Paxiom, C++, microcontroleurs industriels Zilog](fr_ca/cv_1997_2000_weighpack_paxiom.md)
 
 <!---
 nmontmarquette/nmontmarquette is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
