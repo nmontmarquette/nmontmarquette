@@ -14,6 +14,7 @@
 
 # Sommaire professionnel
 
+* [2012-2014, Thought Technology, C/C++, Objective-C, Java, Android, iOS, Bluetooth, Doxygen, microcontroleurs](fr_ca/cv_2012_2014_tt_tps.md)
 * [2009-2012, Thought Technology, C/C++, Objective-C, WinDDK, WDK, pilote, iOS, Android, Bluetooth, microcontroleurs](fr_ca/cv_2009_2012_tt_tele_infiniti.md)
 * [2000-2009, Thought Technology, C/C++, Win32, COM, COM+, PalmOS, Windows CE, microcontroleurs](fr_ca/cv_2000_2010_tt_infiti_series.md)
 * [1997-2000, Weighpack/Paxiom, C++, microcontroleurs industriels Zilog](fr_ca/cv_1997_2000_weighpack_paxiom.md)
