@@ -8,7 +8,7 @@
 | Banc de test complet pour la production ainsi que débogage des unités produites. | <ul><li>C++</li><li>COM</li><li>National Instrument LabView</li></ul> |
 
 ---------------------------------------------------------------------------------------------------------------------
-<br><br>
+<br>
 
 # Détaillé
 
