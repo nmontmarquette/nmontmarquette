@@ -1,8 +1,21 @@
-- 👋 Hi, I’m Nicolas
-- 👀 I’m interested in DIY hardware, embedded development & assembly code, basically anything low level!
-- 🌱 I’m currently learning JavaScript & TypeScript (because reasons)
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me on [LinkedIn](hhttps://ca.linkedin.com/in/nicolas-montmarquette-16a50853/en)
+
+
+# Développeur généraliste avec spécialisation en embarqué
+
+- 👋  Bonjour, je me nomme Nicolas Momtmarquette ([English version](en_ca/README.md))
+- 👀  Je suis principalement intéressé de travailler avec du hardware, les projets embarqués, l'assemnleur, en fait presque tout ce qui est bas niveau!
+- 🌱  Dernièrement je me suis finalement mis (un peu) au JavaScript & TypeScript (parce que!)
+- 📫  Vous pouvez aussi me trouver sur [LinkedIn](https://ca.linkedin.com/in/nicolas-montmarquette-16a50853/fr)
+
+# Sommaire personnel
+
+* [Émulateurs 65xx pour le Uzebox](fr_ca/perso_uzebox_contribution.md)
+* [Compilation de statisques Disnat](fr_ca/perso_disnat_stats_parser.md)
+
+# Sommaire professionnel
+
+* [1997-2000, Weighpack/Paxiom, C/C++, microcontroleurs industriels Zilog](fr_ca/cv_1997_2000_weighpack_paxiom.md)
+
 
 <!---
 nmontmarquette/nmontmarquette is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
