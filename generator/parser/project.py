@@ -1,6 +1,7 @@
 """
 Test code for readind a XML-based data file.
 """
+import re
 import xml.etree.ElementTree as ET
 from .task import Task
 
@@ -18,10 +19,26 @@ class Project:
             self._details.append(line.strip())
         self._employer = node.find("employer").text
         self._name = node.find("name").text
+        self._technologies_short = ""
         self._technologies = []
         if node.find("technologies"):
             for children in node.find("technologies").findall("technology"):
                 self._technologies.append(children.text)
+                #
+                # Filter any text in parentheses
+                filtered = re.sub(r"\([a-zA-Z  -]*\)", "", children.text)
+
+                if filtered == "Spécifications Bluetooth":
+                    filtered = "Bluetooth"
+
+                if "Microcontrôleurs" in filtered:
+                    filtered = filtered.replace("Microcontrôleurs", "µC")
+
+                if "Compilateur " in filtered:
+                    filtered = filtered.replace("Compilateur ", "")
+
+                self._technologies_short += f"{filtered.strip()}, "
+            self._technologies_short = self._technologies_short[:-2] # remove tailing ", "
         self._years = node.find("years").text
 
     @property
@@ -48,6 +65,11 @@ class Project:
     def technologies(self):
         """Returns a collection of used technology strings."""
         return self._technologies
+
+    @property
+    def technologies_short(self):
+        """Returns a diggested, short string of the technology list."""
+        return self._technologies_short
 
     @property
     def years(self):

@@ -59,12 +59,11 @@ class DataParser():
                 self._projects.append(Project(node))
 
         return self._projects
-        projects = ET.SubElement(self.root[0], "projects")
-        pp = ET.SubElements(self.root[0], "projects")
-        return ET.SubElement(self.root[0], "projects")
 
     def generate_projects_summary(self, filename):
-        with open(filename, "w") as file:
+        """Generate a project list summary markdown file."""
+
+        with open(filename, "w", encoding="utf-8") as file:
             file.write("# Sommaire\n")
             file.write("| Années | Employeur | Projet | Tâches | Technologies |\n")
             file.write("|--------|-----------|--------|--------|--------------|\n")
@@ -86,7 +85,9 @@ class DataParser():
                 file.write(f"| {project.years} | {project.employer} | {project.name} | {tasks_str} | {technologies_str} |\n")
 
     def generate_tasks_summary(self, filename):
-        with open(filename, "w") as file:
+        """Generates a task list summary markdown file."""
+
+        with open(filename, "w", encoding="utf-8") as file:
             file.write("# Sommaire\n")
             file.write("| Années | Employeur | Projet | Tâches | Technologies |\n")
             file.write("|--------|-----------|--------|--------|--------------|\n")
@@ -99,12 +100,20 @@ class DataParser():
                     file.write(f"| {project.years} | {project.employer} | {project.name} | {task.description} | {technologies_str} |\n")
 
     def generate_project_list(self, filename, use_tech_bullets=True, show_details=True):
-        """Generate a project list markdown file."""
+        """Generates a project list markdown file."""
 
-        with open(filename, "w") as file:
+        with open(filename, "w", encoding="utf-8") as file:
 
             first_employer = True
             count = 0
+
+            file.write("# Sommaire\n\n")
+            for project in self.projects:
+                file.write(f"* [{project.years} - {project.name} - {project.technologies_short}](#sdsdsdfsdfsdf)\n")
+
+            file.write("\n\n")
+            file.write("# Détails\n\n")
+
             for project in self.projects:
 
                 # Add a splitter after details (before new employer header)
@@ -112,6 +121,8 @@ class DataParser():
                 if first_employer is not True:
                     file.write("\n")
                     file.write("------------------------------------------------------------------\n")
+                    file.write("<br>\n")
+                    file.write("<br>\n")
                     file.write("\n")
 
                 file.write(f"# {project.employer} - {project.name} ({project.years})\n")
@@ -140,10 +151,12 @@ class DataParser():
 
                 file.write(f"| {project.name} | {tasks_str} | {technologies_str} |\n")
 
-                file.write("\n")
-                file.write("------------------------------------------------------------------\n")
-                file.write("\n")
-                if show_details:
+                if show_details and project.details:
+                    file.write("\n")
+                    file.write("\n")
+                    file.write("------------------------------------------------------------------\n")
+                    file.write("<br>\n")
+                    file.write("\n")
                     file.write("## Notes et détails\n")
                     file.write("\n")
                     for line in project.details:
