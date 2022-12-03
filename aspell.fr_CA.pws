@@ -1,7 +1,8 @@
-personal_ws-1.1 fr 108
+personal_ws-1.1 fr 108 
 Afrique
 Android
 App-Store
+Apple
 Asset
 Atmel
 Big
@@ -17,6 +18,7 @@ DJango
 Delphi
 Django
 Doxygen
+Débogage
 ECS
 Entity
 FlexComp
@@ -24,6 +26,7 @@ Github
 Google
 HCI
 IAR
+Implémentation
 Infiniti
 Innobec
 Isochronous
@@ -35,6 +38,7 @@ Makefile
 MatLab
 Mathworks
 Microcontroleurs
+Microcontrôleurs
 Microsoft
 Objective-C
 Olimex
@@ -48,6 +52,7 @@ Qualcomm
 RAM
 RT
 Rockchip
+Réseautique
 SDK
 Set-up
 SnapDragon
@@ -73,16 +78,21 @@ bash
 bindinds
 bulk
 concentrateurs
-Android
-Apple
+d'Android
+d'Apple
+d'émulateurs
+débogage
 en-ville
 framework
 gdb
 iKabin
 iOS
+implémentation
 kernel
 l'API
 l'iPhone
+microampères
+microcontrôleur
 micrologiciel
 micrologiciels
 multi-plateformes
@@ -90,8 +100,10 @@ multi-platforme
 multibande
 pfSense
 plateformes
+prototypé
 resolver
 scanneur
 set-up
 stack
 xml
+émulateurs

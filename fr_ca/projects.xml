@@ -12,7 +12,7 @@
                 <description>Création d'un outil pour lire et convertir les centaines de fichiers Makefile en CMake avec visualisation de l'arbre de dépendance question d’estimer le pourcentage du travail fait.</description>
             </task>
             <task>
-                <description>Déboguage de différents problèmes dus à la conversion et mises à jour de librairies.</description>
+                <description>Débogage de différents problèmes dus à la conversion et mises à jour de librairies.</description>
             </task>
         </tasks>
         <technologies>
@@ -98,13 +98,13 @@
             <task>
                 <description>Intégrer les changements du manufacturier conçu pour un noyau Linux plus récent dans un noyau Linux un peu plus vieux.</description>
                 <technologies>
-                    <technology>C, nonau Linux</technology>
+                    <technology>C, noyau Linux</technology>
                 </technologies>
             </task>
             <task>
                 <description>Établir la faisabilité d'une mise à jour automatique.</description>
                 <technologies>
-                    <technology>C, nonau Linux</technology>
+                    <technology>C, noyau Linux</technology>
                     <technology>Android (bas niveau)</technology>
                 </technologies>
             </task>
@@ -112,7 +112,7 @@
                 <description>Instrumenter et qualifier les performances des appareils existants avant et après les correctifs au pilote d'écriture Flash.</description>
                 <technologies>
                     <technology>Python (DJango)</technology>
-                    <technology>pfSensce</technology>
+                    <technology>pfSense</technology>
                     <technology>Réseautique générale</technology>
                 </technologies>
             </task>
@@ -125,7 +125,7 @@
         </tasks>
         <technologies>
             <technology>Android (bas niveau)</technology>
-            <technology>C, nonau Linux</technology>
+            <technology>C, noyau Linux</technology>
             <technology>Python (DJango)</technology>
             <technology>pfSense</technology>
             <technology>Réseautique générale</technology>
@@ -137,11 +137,11 @@
             Rockchip, le manufacturier, avait quelques correctifs possibles pour un noyau plus récent, ces correctifs forçaient les écritures plus rapidement (au pris d'un peu moins de performance) mais diminuaient les risques de corruption de donnée. Le client nous a contactés afin que nous nous:
             a) Déterminions si oui ou non le correctif du manufacturier améliorait réellement la situation b) faisions l'évaluation si une mise à jour automatiquement était possible nécessitant un remplacement complet de l'image Flash.
 
-            Un des sous-mandats était de quantifier et d'instrumenter si les correctifs amélioraient la stabilité avant un déploiement massif. Avec l'accord du client et plusieurs milliers de dollars d'achats, j'ai monté une armoire mobile sur lequel on trouvait plus d’une centaine de ces appareils ainsi que tout le nécessaire:  3 UPS, 4 barres d'alimentation intelligentes, 5 concentrateurs 24 ports, beaucoup de câbles réseaux et une machine sur laquelle tournait un portail Django, et un portail pfSense,
+            Un des sous mandats était de quantifier et d'instrumenter si les correctifs amélioraient la stabilité avant un déploiement massif. Avec l'accord du client et plusieurs milliers de dollars d'achats, j'ai monté une armoire mobile sur lequel on trouvait plus d’une centaine de ces appareils ainsi que tout le nécessaire:  3 UPS, 4 barres d'alimentation intelligentes, 5 concentrateurs 24 ports, beaucoup de câbles réseaux et une machine sur laquelle tournait un portail Django, et un portail pfSense,
 
             J'avais 60 appareils avec le correctif et 60 autres sans le correctif. Un ordinateur additionnel vérifiait la présence des appareils sur le réseau improvisé et simulait une panne abrupte via les barres d'alimentation intelligentes. Un portail simple Django enregistrait en temps réel les tentatives de connexion de chacun des appareils. Finalement, notre portail pfSense nous permettait un contrôle total sans importuner le réseau local de la compagnie.
 
-            Dans ce projet, j’ai pu familiariser avec le processus de compiler un noyau Linux complet, l'intégrer à une image Android elle aussi construite au complet. En plus de poursuivre mon apprentissage de DJango, j’ai pu découvrir pfSense que j’utilise à la maison depuis ce projet-là.
+            Dans ce projet, j’ai pu familiariser avec le processus de compiler un noyau Linux complet, l'intégrer à une image Android elle aussi construite au complet. En plus de poursuivre mon apprentissage de DJango, j’ai pu découvrir pfSense que j’utilise à la maison depuis ce projet là.
         </details>
     </project>
     <project>
@@ -183,7 +183,7 @@
             <technology>Bluetooth</technology>
         </technologies>
         <details>
-            En tant que membre d'une équipe de 6 développeurs, ce projet maison avait pour but d'intégré de nouveau scanner Bluetooth ainsi que support de caméra pour notre application maison multiplateforme.
+            En tant que membre d'une équipe de 6 développeurs, ce projet maison avait pour but d'intégrer de nouveau scanner Bluetooth ainsi que support de caméra pour notre application maison multi-plateformes.
 
             Plus tard, nous avons aussi eu le feu vert du client pour ajouter le nouvel arrivé dans le monde du mobile: Windows Phone et l'API Windows RT.
         </details>
@@ -197,13 +197,13 @@
         <employer>Innobec (Spiria)</employer>
         <tasks>
             <task>
-                <description>Implémentation générale (bash + Python) des fonctionalité du système.</description>
+                <description>Implémentation générale (bash + Python) des fonctionnalités du système.</description>
                 <technologies>
                     <technology>Python</technology>
                     <technology>bash</technology>
                     <technology>Linux</technology>
                     <technology>Modem cellulaire</technology>
-                    <technology>Controlleur de charge solaire (Solentro)</technology>
+                    <technology>Contrôleur de charge solaire (Solentro)</technology>
                 </technologies>
             </task>
             <task>
@@ -226,10 +226,10 @@
             <technology>Cartes Olimex</technology>
             <technology>Django (Python)</technology>
             <technology>Modem cellulaire</technology>
-            <technology>Controlleur de charge solaire (Solentro)</technology>
+            <technology>Contrôleur de charge solaire (Solentro)</technology>
         </technologies>
         <details>
-            Ce projet constait à concevoir et réaliser des prototypes de kiosques de recharge solaire autonome pour des villages sans électricité en Afrique. Bien qu'ils n'aient pas d'électricité, tous les gens ont au moins 2 téléphones cellulaires. Leurs téléphones sont ce qui leur permet de rester en contact avec le reste du monde ainsi que surtout fait office de système de paiement personnel. C'est pourquoi ces kiosques leur permettent de recharger leurs appareils sans avoir à faire 2 heures de route pour se rendre "en-ville".
+            Ce projet consistait à concevoir et réaliser des prototypes de kiosques de recharge solaire autonome pour des villages sans électricité en Afrique. Bien qu'ils n'aient pas d'électricité, tous les gens ont au moins 2 téléphones cellulaires. Leurs téléphones sont ce qui leur permet de rester en contact avec le reste du monde ainsi que surtout fait office de système de paiement personnel. C'est pourquoi ces kiosques leur permettent de recharger leurs appareils sans avoir à faire 2 heures de route pour se rendre "en-ville".
 
             C'était mon premier projet chez Spiria. Je découvrais Python ainsi que le "framework" Django, je faisais de la soudure, déboguais les cartes du système, faisais de l'assemblage, du débogage de Python, du débogage de transactions dans la base de données, colligeais des données statistiques pour diagnostiqué la raison des pannes. C'était une des premières fois que je devais utiliser Linux à fond, qu'en ligne de commande.
         </details>
@@ -243,7 +243,7 @@
         <employer>Thought Technology</employer>
         <tasks>
             <task>
-                <description>Conception du microgiciel principal, utilisation de configurations dynamiques (PSoC).</description>
+                <description>Conception du micrologiciel principal, utilisation de configurations dynamiques (PSoC).</description>
                 <technologies>
                     <technology>C</technology>
                     <technology>Spécification matérielle de Bluetooth</technology>
@@ -257,7 +257,7 @@
                     <technology>C++, COM (Windows)</technology>
                     <technology>Java (Android)</technology>
                     <technology>Objective-C (iOS)</technology>
-                    <technology>Compilation multi-plateformet</technology>
+                    <technology>Compilation multi-plateformes</technology>
                 </technologies>
             </task>
             <task>
@@ -269,7 +269,7 @@
                 </technologies>
             </task>
             <task>
-                <description>Documentation détaillée du microgiciel (plus de 200 pages).</description>
+                <description>Documentation détaillée du micrologiciel (plus de 200 pages).</description>
                 <technologies>
                     <technology>Doxygen</technology>
                 </technologies>
@@ -285,9 +285,9 @@
             <technology>Spécifications Bluetooth</technology>
         </technologies>
         <details>
-            Dans ce projet, les requis n'ont cessé de s'ajouter et il n'était pas possible dans ce cas-ci d'utiliser une autre version avec plus de RAM ou d'espace Flash. Il devenait très difficile d'ajouter quoi que ce soit dans ce micrologiciel tant il était dense. À tout moment, je n'avais guère plus qu'une dizaine d'octets libre en Flash, je devais constamment trouvé comment rendre le code plus compact. En ce qui concerne la RAM, là aussi je n'avais en moyenne que 4-6 octets de libre avant d'exploser la pile.
+            Dans ce projet, les requis n'ont cessé de s'ajouter et il n'était pas possible dans ce cas ci d'utiliser une autre version avec plus de RAM ou d'espace Flash. Il devenait très difficile d'ajouter quoi que ce soit dans ce micrologiciel tant il était dense. À tout moment, je n'avais guère plus qu'une dizaine d'octets libre en Flash, je devais constamment trouvé comment rendre le code plus compact. En ce qui concerne la RAM, là aussi je n'avais en moyenne que 4-6 octets de libre avant d'exploser la pile.
 
-            Pour ce projet j'ai aussi dû optimiser le code purement pour économiser des micro-ampères. C'était nécessaire pour étirer la durée de vie d’entreposage des appareils puisque la pile n'était pas facilement accessible et nous ne désirions pas avoir à recharger l'ensemble des appareils tous les N mois.
+            Pour ce projet j'ai aussi dû optimiser le code purement pour économiser des microampères. C'était nécessaire pour étirer la durée de vie d’entreposage des appareils puisque la pile n'était pas facilement accessible et nous ne désirions pas avoir à recharger l'ensemble des appareils tous les N mois.
 
             J'ai développé des outils permettant de compiler certaines librairies pour les plateformes Windows, iOS et Android, à partir du même code source en faisant usage des ressemblances des langages C++, Java et Objective-C tout en limitant l'usage des spécificités moins portable.
 
@@ -304,35 +304,35 @@
         <employer>Thought Technology</employer>
         <tasks>
             <task>
-                <description>Conception de fonctionnalité sans fil Télé-Inifniti pour appareils d'acquisition existants.</description>
+                <description>Conception de fonctionnalité sans fil Tele-Infiniti pour appareils d'acquisition existants.</description>
                 <technologies>
                     <technology>C</technology>
                     <technology>Spécification matérielle de Bluetooth</technology>
-                    <technology>Protocol USB bas-niveau (HCI)</technology>
+                    <technology>Protocole USB bas-niveau (HCI)</technology>
                     <technology>Procédure de soumission matériel auprès d'Apple</technology>
                 </technologies>
             </task>
             <task>
                 <description>Conception de nouvelles librairies et pilotes pour Windows.</description>
                 <technologies>
-                    <technology>Déboguage de "kernel drivers</technology>
-                    <technology>Tranfert USB "bulk" et "Isochronous"</technology>
+                    <technology>Débogage de "kernel drivers</technology>
+                    <technology>Transfert USB "bulk" et "Isochronous"</technology>
                     <technology>C++, Win32, Windows DDK, WDK (pilote)</technology>
-                    <technology>Procédure d'obtentient d'un certificat officiel</technology>
+                    <technology>Procédure d'obtention d'un certificat officiel</technology>
                     <technology>Procédure de signature auprès de Microsoft</technology>
                 </technologies>
             </task>
             <task>
-                <description>Conception de prototype d'applications et libraries pour plateforme mobiles.</description>
+                <description>Conception de prototype d'applications et librairies pour plateformes mobiles.</description>
                 <technologies>
-                    <technology>C++, Ojective-C, Java</technology>
+                    <technology>C++, Objective-C, Java</technology>
                     <technology>Android, iOS</technology>
                     <technology>Procédure de soumission d'application au App-Store d'Apple</technology>
                     <technology>Procédure de soumission matériel auprès d'Apple</technology>
                 </technologies>
             </task>
             <task>
-                <description>Banc de test complet automatisé (avec brouilleur multibandes) pour instrumenter le débit ainsi que la fiabilité.</description>
+                <description>Banc de test complet automatisé (avec brouilleur multibande) pour instrumenter le débit ainsi que la fiabilité.</description>
                 <technologies>
                     <technology>C++</technology>
                     <technology>COM</technology>
@@ -340,10 +340,10 @@
                 </technologies>
             </task>
             <task>
-                <description>Établir la procédure d'obtentient d'un certificat officiel auprès de Microsoft et Apple.</description>
+                <description>Établir la procédure d'obtention d'un certificat officiel auprès de Microsoft et Apple.</description>
             </task>
             <task>
-                <description>Établir la procédure de signature de pilote auprés de Microsoft.</description>
+                <description>Établir la procédure de signature de pilote auprès de Microsoft.</description>
             </task>
             <task>
                 <description>Établir la procédure de signature d'application auprès d'Apple.</description>
@@ -352,19 +352,19 @@
                 <description>Établir la procédure de soumission matériel auprès d'Apple.</description>
             </task>
         </tasks>
-        <technologies_short>C/C++, Ojective-C, Java, Kernel dryver, Win32, DDK, WDK, HCI (USB), Android, iOS</technologies_short>
+        <technologies_short>C/C++, Objective-C, Java, Kernel driver, Win32, DDK, WDK, HCI (USB), Android, iOS</technologies_short>
         <technologies>
-            <technology>C/C++, Ojective-C, Java</technology>
-            <technology>Déboguage de "kernel drivers (Windows)</technology>
-            <technology>Protocol USB bas-niveau (HCI)</technology>
-            <technology>Tranfert USB "bulk" et "Isochronous"</technology>
+            <technology>C/C++, Objective-C, Java</technology>
+            <technology>Débogage de "kernel drivers (Windows)</technology>
+            <technology>Protocole USB bas-niveau (HCI)</technology>
+            <technology>Transfert USB "bulk" et "Isochronous"</technology>
             <technology>Win32, Windows DDK, WDK (pilote)</technology>
             <technology>Android, iOS</technology>
         </technologies>
         <details>
             Le module 'Tele-Infiniti' était essentiellement un greffon sans fil (Bluetooth) pour notre gamme de produits d'acquisitions.
 
-            Nous avons contacté plusieurs manufacturiers, assemblé et testé de nombreux prototypes, au final qu'un seul module offrait le débit nécessaire en CLASS 1 (environ 100m).
+            Nous avons contacté plusieurs manufacturiers, assemblé et testé de nombreux prototypes, au final qu'un seul module offrait le débit nécessaire en CLASSA 1 (environ 100m).
 
             Le micrologiciel principal ayant presque atteint son maximum (sans avoir à changer de microcontrôleur) ainsi que le peu de RAM, nous ne pouvions pas utiliser un "stack" Bluetooth existant. Nous devions utiliser la couche HCI directement, nous forçait donc à écrire notre propre pilote pour Windows puisque le pilote Bluetooth standard ne recevrait pas les échanges nécessaires.
 
@@ -394,7 +394,7 @@
                 <technologies>
                     <technology>C++</technology>
                     <technology>Win32, COM, COM+</technology>
-                    <technology>Pocket PC, Window CE, Palm OS</technology>
+                    <technology>Pocket PC, Windows CE, Palm OS</technology>
                 </technologies>
             </task>
             <task>
@@ -420,16 +420,16 @@
             <technology>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)</technology>
             <technology>Compilateur IAR</technology>
             <technology>C++, Win32, COM, COM+, .NET, VBA (Windows)</technology>
-            <technology>Pocket PC, Window CE, Palm OS</technology>
+            <technology>Pocket PC, Windows CE, Palm OS</technology>
             <technology>LabView (National Instrument)</technology>
             <technology>MatLab (Mathworks)</technology>
         </technologies>
         <details>
             Notre interface USB maison représentait un certain défi d'optimisation. En effet, il n'y avait que peu de cycle disponible par transaction USB. Bien que ça augmentait le coût, j'ai dû suggérer une variante où la plupart des instructions prenaient 6 cycles machines plutôt que le 12 avec la version de base du microcontrôleur, nous permettant de descendre sous la barre des 100% avec une utilisation processeur de 95-98 %
 
-            Le travail impliquait aussi beaucoup d'outils et de code nécessaires aux testages et débogages des unités produites par notre département de production.
+            Le travail impliquait aussi beaucoup d'outils et de code nécessaires aux testages et débogage des unités produites par notre département de production.
 
-            Finalement, pour permettre aux développeurs d'applications d'utiliser nos appareils, nous fournissions SDK complet permettant de communiquer avec tous nos appareils via un API unique. J'ai eu bonne implication dans le design ainsi que toute l'implémentation de l'API, de sa documentation et multiples exemples en différents langages. Je balançais donc entre le code micrologiciel et le code WIN32 sur une base régulière.
+            Finalement, pour permettre aux développeurs d'applications d'utiliser nos appareils, nous fournissions SDK complet permettant de communiquer avec tous nos appareils via un API unique. J'ai eu bonne implication dans le design ainsi que toute implémentation de l'API, de sa documentation et multiples exemples en différents langages. Je balançais donc entre le code micrologiciel et le code WIN32 sur une base régulière.
         </details>
         <links>
             <link>https://thoughttechnology.com/flexcomp-system-with-biograph-infiniti-software-t7555m</link>
@@ -470,8 +470,8 @@
         <details>
             J'étais particulière fier de ma contribution d'émulateurs machines, avant mon passage le cycle de
             développement nécessitait de constant aller-retour en production pour vérifier le fonctionnement général.
-            Grâce à mes émulateurs, on arrivait à vérifier 85-90% du fonctionnement à même notre posrte de travail.
-            Dans majorité des cas, nous n'allions en produciton que pour constater que tout fonctionnait correctement.
+            Grâce à mes émulateurs, on arrivait à vérifier 85-90% du fonctionnement à même notre poste de travail.
+            Dans majorité des cas, nous n'allions en production que pour constater que tout fonctionnait correctement.
         </details>
         <links>
             <link>https://www.weighpack.com/about-weighpack-packaging-machines/</link>
