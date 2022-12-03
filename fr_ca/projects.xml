@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <name>T.P.S.</name>
+        <years>2012-2014</years>
+        <employer>Thought Technology</employer>
+        <tasks>
+            <task>
+                <description>Conception du microgiciel principal, utilisation de configurations dynamiques (PSoC).</description>
+                <technologies>
+                    <technology>C</technology>
+                    <technology>Spécification matérielle de Bluetooth</technology>
+                    <technology>Cypress PSoC</technology>
+                    <technology>Configuration dynamique (PSoC)</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception d'applications de démonstration ainsi que librairies multi-platforme ainsi que des outil maison permettant de compiler certaines librairies pour les plateformes Windows, iOS et Android, à partir du même code source.</description>
+                <technologies>
+                    <technology>C++, COM (Windows)</technology>
+                    <technology>Java (Android)</technology>
+                    <technology>Objective-C (iOS)</technology>
+                    <technology>Compilation multi-plateformet</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception banc de test complet et outils interne en soutien au département de production.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>COM</technology>
+                    <technology>National Instrument LabView</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Documentation détaillée du microgiciel (plus de 200 pages).</description>
+                <technologies>
+                    <technology>Doxygen</technology>
+                </technologies>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C (Cypress PSoC)</technology>
+            <technology>C++, COM, COM+, (Windows)</technology>
+            <technology>Java (Android)</technology>
+            <technology>Objective-C (iOS)</technology>
+            <technology>LabView (National Instrument)</technology>
+            <technology>Doxygen</technology>
+            <technology>Spécifications Bluetooth</technology>
+        </technologies>
+        <details>
+            Dans ce projet, les requis n'ont cessé de s'ajouter et il n'était pas possible dans ce cas-ci d'utiliser une autre version avec plus de RAM ou d'espace Flash. Il devenait très difficile d'ajouter quoi que ce soit dans ce micrologiciel tant il était dense. À tout moment, je n'avais guère plus qu'une dizaine d'octets libre en Flash, je devais constamment trouvé comment rendre le code plus compact. En ce qui concerne la RAM, là aussi je n'avais en moyenne que 4-6 octets de libre avant d'exploser la pile.
+
+            Pour ce projet j'ai aussi dû optimiser le code purement pour économiser des micro-ampères. C'était nécessaire pour étirer la durée de vie d’entreposage des appareils puisque la pile n'était pas facilement accessible et nous ne désirions pas avoir à recharger l'ensemble des appareils tous les N mois.
+
+            J'ai développé des outils permettant de compiler certaines librairies pour les plateformes Windows, iOS et Android, à partir du même code source en faisant usage des ressemblances des langages C++, Java et Objective-C tout en limitant l'usage des spécificités moins portable.
+
+            Le micrologiciel était si dense, que ma documentation interne faisait près de 200 pages.
+        </details>
+        <links>
+            <link>https://www.youtube.com/watch?v=4z4j70gOBjQ</link>
+            <link>https://thoughttechnology.com/evu-tps-package-t4500</link>
+        </links>
+    </project>
+    <project>
+        <name>Tele-Infiniti</name>
+        <years>2009-2012</years>
+        <employer>Thought Technology</employer>
+        <tasks>
+            <task>
+                <description>Conception de fonctionnalité sans fil Télé-Inifniti pour appareils d'acquisition existants.</description>
+                <technologies>
+                    <technology>C</technology>
+                    <technology>Spécification matérielle de Bluetooth</technology>
+                    <technology>Protocol USB bas-niveau (HCI)</technology>
+                    <technology>Procédure de soumission matériel auprès d'Apple</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception de nouvelles librairies et pilotes pour Windows.</description>
+                <technologies>
+                    <technology>Déboguage de "kernel drivers</technology>
+                    <technology>Tranfert USB "bulk" et "Isochronous"</technology>
+                    <technology>C++, Win32, Windows DDK, WDK (pilote)</technology>
+                    <technology>Procédure d'obtentient d'un certificat officiel</technology>
+                    <technology>Procédure de signature auprès de Microsoft</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception de prototype d'applications et libraries pour plateforme mobiles.</description>
+                <technologies>
+                    <technology>C++, Ojective-C, Java</technology>
+                    <technology>Android, iOS</technology>
+                    <technology>Procédure de soumission d'application au App-Store d'Apple</technology>
+                    <technology>Procédure de soumission matériel auprès d'Apple</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Banc de test complet automatisé (avec brouilleur multibandes) pour instrumenter le débit ainsi que la fiabilité.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>COM</technology>
+                    <technology>National Instrument LabView</technology>
+                </technologies>
+            </task>
+        </tasks>
+        <details>
+            Le module 'Tele-Infiniti' était essentiellement un greffon sans fil (Bluetooth) pour notre gamme de produits d'acquisitions.
+
+            Nous avons contacté plusieurs manufacturiers, assemblé et testé de nombreux prototypes, au final qu'un seul module offrait le débit nécessaire en CLASS 1 (environ 100m).
+
+            Le micrologiciel principal ayant presque atteint son maximum (sans avoir à changer de microcontrôleur) ainsi que le peu de RAM, nous ne pouvions pas utiliser un "stack" Bluetooth existant. Nous devions utiliser la couche HCI directement, nous forçait donc à écrire notre propre pilote pour Windows puisque le pilote Bluetooth standard ne recevrait pas les échanges nécessaires.
+
+            Durant cette période, l'iPhone faisait son apparition, j'ai donc exploré et prototypé avec les plateformes Apple et Android.
+
+            Pour ce projet, spécifiquement, j'ai travaillé avec la NASA ainsi que la compagnie CSR (manufacturier de puces Bluetooth). La NASA, nous ayant commandé plusieurs systèmes d'acquisition. Durant leurs tests a été découvert un bogue très occasionnel sur lequel nous devions travailler. Ainsi, environ, une fois par 24 millions de paquets il y avait conflit entre deux récepteurs Bluetooth brisant trame causant des artefacts dans les données capturées.
+        </details>
+        <links>
+            <link>https://thoughttechnology.com/tele-infiniti-compact-flash-t9600/</link>
+        </links>
+    </project>
+    <project>
+        <name>FlexComp Infiniti</name>
+        <years>2000-2009</years>
+        <employer>Thought Technology</employer>
+        <tasks>
+            <task>
+                <description>Conception et implémentation de micrologiciels.</description>
+                <technologies>
+                    <technology>C, Assembleur (Intel)</technology>
+                    <technology>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)</technology>
+                    <technology>Compilateur IAR</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception d'un API pour Windows utilisant les technologies COM.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>Win32, COM, COM+</technology>
+                    <technology>Pocket PC, Window CE, Palm OS</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception et documentation d'un kit du développeur (SDK) incluant un guide de plus 120 pages.</description>
+                <technologies>
+                    <technology>C/C++</technology>
+                    <technology>Win32, COM, COM+, .NET, VBA</technology>
+                    <technology>National Instrument LabView</technology>
+                    <technology>MatLab</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Banc de test complet pour la production ainsi que débogage des unités produites.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>COM</technology>
+                    <technology>National Instrument LabView</technology>
+                </technologies>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C, Assembleur (Intel)</technology>
+            <technology>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)</technology>
+            <technology>Compilateur IAR</technology>
+            <technology>C++, Win32, COM, COM+, .NET, VBA (Windows)</technology>
+            <technology>Pocket PC, Window CE, Palm OS</technology>
+            <technology>LabView (National Instrument)</technology>
+            <technology>MatLab (Mathworks)</technology>
+        </technologies>
+        <details>
+            Notre interface USB maison représentait un certain défi d'optimisation. En effet, il n'y avait que peu de cycle disponible par transaction USB. Bien que ça augmentait le coût, j'ai dû suggérer une variante où la plupart des instructions prenaient 6 cycles machines plutôt que le 12 avec la version de base du microcontrôleur, nous permettant de descendre sous la barre des 100% avec une utilisation processeur de 95-98 %
+
+            Le travail impliquait aussi beaucoup d'outils et de code nécessaires aux testages et débogages des unités produites par notre département de production.
+
+            Finalement, pour permettre aux développeurs d'applications d'utiliser nos appareils, nous fournissions SDK complet permettant de communiquer avec tous nos appareils via un API unique. J'ai eu bonne implication dans le design ainsi que toute l'implémentation de l'API, de sa documentation et multiples exemples en différents langages. Je balançais donc entre le code micrologiciel et le code WIN32 sur une base régulière.
+        </details>
+        <links>
+            <link>https://thoughttechnology.com/flexcomp-system-with-biograph-infiniti-software-t7555m</link>
+        </links>
+    </project>
+    <project>
+        <name>Machinerie</name>
+        <years>1997-2000</years>
+        <employer>Weighpack / Paxiom</employer>
+        <tasks>
+            <task>
+                <description>Maintenance améliorations de micrologiciel contrôlant de l'équipement industriel d'emballage.</description>
+                <technologies>
+                    <technology>C, Assembleur (Zilog)</technology>
+                    <technology>Microcontrôleurs industriels Zilog</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception d'émulateurs machine afin d'accélérer le testage et le développement des requêtes clients.</description>
+                <technologies>
+                    <technology>C++</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception d'une application de contrôle à distance.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>Win32, Delphi, Windows</technology>
+                </technologies>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C, C++</technology>
+            <technology>Assembleur (Zilog)</technology>
+            <technology>Microcontrôleurs industriels Zilog</technology>
+            <technology>Win32, Delphi, Windows</technology>
+        </technologies>
+        <details>
+            J'étais particulière fier de ma contribution d'émulateurs machine, avant mon passage le cycle de développement était:
+
+            * 1. Effacer un EEPROM
+            * 2. Edition du code
+            * 3. Compilation
+            * 4. Écriture EEPROM
+            * 5. Se rendre en production
+            * 6. Remplacer l'EEPROM
+            * 7. Tester la machine en personne, oops petit oublie, on retourne à l'étape no.1
+
+            Grâce à l'émulateur, on sauvait beaucoup de temps de développement:
+
+            * 1. Effacer un EEPROM
+            * 2. Edition du code
+            * 3. Compilation
+            * 4. Tester dans l'émulateur, oops petit oublie, on retourne à l'étape no. 2
+            * 5. Écriture EEPROM
+            * 6. Se rendre en production
+            * 7. Remplacer l'EEPROM
+            * 8. Tester la machine en personne
+        </details>
+        <links>
+            <link>https://www.weighpack.com/about-weighpack-packaging-machines/</link>
+        </links>
+    </project>
+
+</projects>
