@@ -19,26 +19,14 @@ class Project:
             self._details.append(line.strip())
         self._employer = node.find("employer").text
         self._name = node.find("name").text
-        self._technologies_short = ""
+        if node.find("technologies_short"):
+            self._technologies_short = node.find("technologies_short").text
+        else:
+            self._technologies_short = None
         self._technologies = []
         if node.find("technologies"):
             for children in node.find("technologies").findall("technology"):
                 self._technologies.append(children.text)
-                #
-                # Filter any text in parentheses
-                filtered = re.sub(r"\([a-zA-Z  -]*\)", "", children.text)
-
-                if filtered == "Spécifications Bluetooth":
-                    filtered = "Bluetooth"
-
-                if "Microcontrôleurs" in filtered:
-                    filtered = filtered.replace("Microcontrôleurs", "µC")
-
-                if "Compilateur " in filtered:
-                    filtered = filtered.replace("Compilateur ", "")
-
-                self._technologies_short += f"{filtered.strip()}, "
-            self._technologies_short = self._technologies_short[:-2] # remove tailing ", "
         self._years = node.find("years").text
 
     @property
@@ -69,6 +57,26 @@ class Project:
     @property
     def technologies_short(self):
         """Returns a diggested, short string of the technology list."""
+        if not self._technologies_short:
+            self._technologies_short = ""
+            if self._node.find("technologies"):
+                for children in self._node.find("technologies").findall("technology"):
+                    #
+                    # Filter any text in parentheses
+                    filtered = re.sub(r"\([a-zA-Z  -]*\)", "", children.text)
+
+                    if filtered == "Spécifications Bluetooth":
+                        filtered = "Bluetooth"
+
+                    if "Microcontrôleurs" in filtered:
+                        filtered = filtered.replace("Microcontrôleurs", "µC")
+
+                    if "Compilateur " in filtered:
+                        filtered = filtered.replace("Compilateur ", "")
+
+                    self._technologies_short += f"{filtered.strip()}, "
+                self._technologies_short = self._technologies_short[:-2] # remove tailing ", "
+
         return self._technologies_short
 
     @property

@@ -7,8 +7,9 @@ class Task:
     def __init__(self, node):
         self._description = node.find("description").text
         self._technologies = []
-        for children in node.find("technologies").findall("technology"):
-            self._technologies.append(children.text)
+        if node.find("technologies"):
+            for children in node.find("technologies").findall("technology"):
+                self._technologies.append(children.text)
 
     @property
     def description(self):

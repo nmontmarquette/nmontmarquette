@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <name>iKabin</name>
+        <years>2014-2015</years>
+        <employer>Innobec (Spiria)</employer>
+        <tasks>
+            <task>
+                <description>Implémentation générale (bash + Python) des fonctionalité du système.</description>
+                <technologies>
+                    <technology>Python</technology>
+                    <technology>bash</technology>
+                    <technology>Linux</technology>
+                    <technology>Modem cellulaire</technology>
+                    <technology>Controlleur de charge solaire (Solentro)</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Implémentation prototype du portail Web (Django).</description>
+                <technologies>
+                    <technology>Django (Python)</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Population et débogage des cartes du système.</description>
+            </task>
+            <task>
+                <description>Assemblage et filage complet des kiosques prototypes.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>Python</technology>
+            <technology>Linux</technology>
+            <technology>bash</technology>
+            <technology>Cartes Olimex</technology>
+            <technology>Django (Python)</technology>
+            <technology>Modem cellulaire</technology>
+            <technology>Controlleur de charge solaire (Solentro)</technology>
+        </technologies>
+        <details>
+            Ce projet constait à concevoir et réaliser des prototypes de kiosques de recharge solaire autonome pour des villages sans électricité en Afrique. Bien qu'ils n'aient pas d'électricité, tous les gens ont au moins 2 téléphones cellulaires. Leurs téléphones sont ce qui leur permet de rester en contact avec le reste du monde ainsi que surtout fait office de système de paiement personnel. C'est pourquoi ces kiosques leur permettent de recharger leurs appareils sans avoir à faire 2 heures de route pour se rendre "en-ville".
+
+            C'était mon premier projet chez Spiria. Je découvrais Python ainsi que le "framework" Django, je faisais de la soudure, déboguais les cartes du système, faisais de l'assemblage, du débogage de Python, du débogage de transactions dans la base de données, colligeais des données statistiques pour diagnostiqué la raison des pannes. C'était une des premières fois que je devais utiliser Linux à fond, qu'en ligne de commande.
+        </details>
+        <links>
+            <link>https://www.spiria.com/en/blog/iot-m2m-embedded-solutions/i-kabin-what-adventure/</link>
+        </links>
+    </project>
+    <project>
         <name>T.P.S.</name>
         <years>2012-2014</years>
         <employer>Thought Technology</employer>
@@ -103,6 +149,20 @@
                 </technologies>
             </task>
         </tasks>
+        <technologies_short>C/C++, Ojective-C, Java, Kernel dryver, Win32, DDK, WDK, HCI (USB), Android, iOS</technologies_short>
+        <technologies>
+            <technology>C/C++, Ojective-C, Java</technology>
+            <technology>Déboguage de "kernel drivers (Windows)</technology>
+            <technology>Protocol USB bas-niveau (HCI)</technology>
+            <technology>Tranfert USB "bulk" et "Isochronous"</technology>
+            <technology>Win32, Windows DDK, WDK (pilote)</technology>
+            <technology>Android, iOS</technology>
+            <technology>Procédure d'obtentient d'un certificat officiel</technology>
+            <technology>Procédure de signature auprès de Microsoft</technology>
+            <technology>Procédure de soumission d'application au App-Store d'Apple</technology>
+            <technology>Procédure de soumission matériel auprès d'Apple</technology>
+            <technology>Procédure de signature auprès de Microsoft</technology>
+        </technologies>
         <details>
             Le module 'Tele-Infiniti' était essentiellement un greffon sans fil (Bluetooth) pour notre gamme de produits d'acquisitions.
 
@@ -210,30 +270,13 @@
             <technology>Win32, Delphi, Windows</technology>
         </technologies>
         <details>
-            J'étais particulière fier de ma contribution d'émulateurs machine, avant mon passage le cycle de développement était:
-
-            * 1. Effacer un EEPROM
-            * 2. Edition du code
-            * 3. Compilation
-            * 4. Écriture EEPROM
-            * 5. Se rendre en production
-            * 6. Remplacer l'EEPROM
-            * 7. Tester la machine en personne, oops petit oublie, on retourne à l'étape no.1
-
-            Grâce à l'émulateur, on sauvait beaucoup de temps de développement:
-
-            * 1. Effacer un EEPROM
-            * 2. Edition du code
-            * 3. Compilation
-            * 4. Tester dans l'émulateur, oops petit oublie, on retourne à l'étape no. 2
-            * 5. Écriture EEPROM
-            * 6. Se rendre en production
-            * 7. Remplacer l'EEPROM
-            * 8. Tester la machine en personne
+            J'étais particulière fier de ma contribution d'émulateurs machines, avant mon passage le cycle de
+            développement nécessitait de constant aller-retour en production pour vérifier le fonctionnement général.
+            Grâce à mes émulateurs, on arrivait à vérifier 85-90% du fonctionnement à même notre posrte de travail.
+            Dans majorité des cas, nous n'allions en produciton que pour constater que tout fonctionnait correctement.
         </details>
         <links>
             <link>https://www.weighpack.com/about-weighpack-packaging-machines/</link>
         </links>
     </project>
-
 </projects>
