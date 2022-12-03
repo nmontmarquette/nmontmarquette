@@ -28,6 +28,27 @@
         </links>
     </project>
     <project>
+        <name>"Big Toys"</name>
+        <years>2022-2022</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Correction de divers bogues dans un système embarqué temps réel.</description>
+            </task>
+            <task>
+                <description>Documentation de différents procédés non documentés.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C/C++</technology>
+            <technology>Linux</technology>
+            <technology>bash</technology>
+            <technology>Docker</technology>
+            <technology>GDB</technology>
+            <technology>Python</technology>
+        </technologies>
+    </project>
+    <project>
         <name>"Set-up box"</name>
         <years>2016-2016</years>
         <employer>Innobec (Spiria)</employer>
