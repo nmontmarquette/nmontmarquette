@@ -15,8 +15,9 @@ class Project:
         for children_node in node.find("tasks").findall("task"):
             self._tasks.append(Task(children_node))
         self._details = []
-        for line in node.find("details").text.splitlines():
-            self._details.append(line.strip())
+        if node.find("details"):
+            for line in node.find("details").text.splitlines():
+                self._details.append(line.strip())
         self._employer = node.find("employer").text
         self._name = node.find("name").text
         if node.find("technologies_short"):

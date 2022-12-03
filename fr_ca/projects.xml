@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
-
-
+    <project>
+        <name>"Libre!"</name>
+        <years>2022-2023</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Convertir le logiciel d'un client en logiciel libre incluant la mise à jour de vieilles librairies.</description>
+            </task>
+            <task>
+                <description>Création d'un outil pour lire et convertir les centaines de fichiers Makefile en CMake avec visualisation de l'arbre de dépendance question d’estimer le pourcentage du travail fait.</description>
+            </task>
+            <task>
+                <description>Déboguage de différents problèmes dus à la conversion et mises à jour de librairies.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C/C++</technology>
+            <technology>Make</technology>
+            <technology>CMake</technology>
+            <technology>Python</technology>
+            <technology>Jenkins</technology>
+            <technology>Github Actions</technology>
+        </technologies>
+        <links>
+            <link>À venir en janvier 2023!</link>
+        </links>
+    </project>
     <project>
         <name>"Set-up box"</name>
         <years>2016-2016</years>
