@@ -25,9 +25,9 @@ class DataParser():
         self._projects = None
         self._repo_root_path = None
         self._locale = locale
-        self._data_file_path = os.path.join(self.repo_root_path, locale, data_filename)
+        self._data_file_path = os.path.join(self.repo_root_path, data_filename)
         if not os.path.exists(self.data_file_path):
-            raise FileNotFoundError()
+            raise FileNotFoundError(f"Couldn't find the '{self.data_file_path}' file")
 
         self._data_tree = ET.parse(self.data_file_path)
 

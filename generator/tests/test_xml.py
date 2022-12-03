@@ -1,11 +1,11 @@
 """Main test module."""
 import os
-from unittest import TestCase
+import unittest
 
 from generator.parser import DataParser
 
 
-class TestXml(TestCase):
+class TestXml(unittest.TestCase):
     """Test class for the 'DataParser' class."""
 
     def test_constructor(self):
@@ -54,3 +54,7 @@ class TestXml(TestCase):
     def test_generate_project_list(self):
         data = DataParser("projects.xml")
         data.generate_project_list(os.path.join("generated","project_list.md"), show_details=False)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
