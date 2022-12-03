@@ -195,6 +195,18 @@
                     <technology>National Instrument LabView</technology>
                 </technologies>
             </task>
+            <task>
+                <description>Établir la procédure d'obtentient d'un certificat officiel auprès de Microsoft et Apple.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de signature de pilote auprés de Microsoft.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de signature d'application auprès d'Apple.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de soumission matériel auprès d'Apple.</description>
+            </task>
         </tasks>
         <technologies_short>C/C++, Ojective-C, Java, Kernel dryver, Win32, DDK, WDK, HCI (USB), Android, iOS</technologies_short>
         <technologies>
@@ -204,11 +216,6 @@
             <technology>Tranfert USB "bulk" et "Isochronous"</technology>
             <technology>Win32, Windows DDK, WDK (pilote)</technology>
             <technology>Android, iOS</technology>
-            <technology>Procédure d'obtentient d'un certificat officiel</technology>
-            <technology>Procédure de signature auprès de Microsoft</technology>
-            <technology>Procédure de soumission d'application au App-Store d'Apple</technology>
-            <technology>Procédure de soumission matériel auprès d'Apple</technology>
-            <technology>Procédure de signature auprès de Microsoft</technology>
         </technologies>
         <details>
             Le module 'Tele-Infiniti' était essentiellement un greffon sans fil (Bluetooth) pour notre gamme de produits d'acquisitions.
