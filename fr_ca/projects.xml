@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <name>Lithium</name>
+        <years>2015-2016</years>
+        <employer>Innobec (Spiria)</employer>
+        <tasks>
+            <task>
+                <description>Intégration de nouveau scanneur Bluetooth dans les versions iOS, Android ainsi que Windows Phone.</description>
+                <technologies>
+                    <technology>C++ (Windows RT)</technology>
+                    <technology>Java (Android)</technology>
+                    <technology>Objective-C (iOS)</technology>
+                    <technology>Bluetooth</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Mise à jour et refonte complète des dizaines de dépendances que nous avions.</description>
+                <technologies>
+                    <technology>C/C++</technology>
+                    <technology>Make</technology>
+                    <technology>CMake</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Implémenter une version Windows RT de notre application existante.</description>
+                <technologies>
+                    <technology>C/C++</technology>
+                    <technology>Windows RT</technology>
+                </technologies>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C/C++</technology>
+            <technology>Java (Android)</technology>
+            <technology>Objective-C (iOS)</technology>
+            <technology>Windows RT</technology>
+            <technology>Make, CMake</technology>
+            <technology>Bluetooth</technology>
+        </technologies>
+        <details>
+            En tant que membre d'une équipe de 6 développeurs, ce projet maison avait pour but d'intégré de nouveau scanner Bluetooth ainsi que support de caméra pour notre application maison multiplateforme.
+
+            Plus tard, nous avons aussi eu le feu vert du client pour ajouter le nouvel arrivé dans le monde du mobile: Windows Phone et l'API Windows RT.
+        </details>
+        <links>
+            <link>https://www.spiria.com/en/blog/iot-m2m-embedded-solutions/i-kabin-what-adventure/</link>
+        </links>
+    </project>
+    <project>
         <name>iKabin</name>
         <years>2014-2015</years>
         <employer>Innobec (Spiria)</employer>
