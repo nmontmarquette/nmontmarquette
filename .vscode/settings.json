@@ -2,5 +2,14 @@
     "cSpell.enabled": false,
     "cSpell.diagnosticLevel": "Hint",
     "cSpell.enableFiletypes": [
-    ]
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "generator/tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }

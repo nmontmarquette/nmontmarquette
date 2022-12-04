@@ -1,9 +1,9 @@
-# Thought Technology - FlexComp Infiniti (2000-2009)
+# Thought Technology - FlexComp Infiniti (2000-2010)
 
 | Descriptions | Technologies |
 |--------------|--------------|
-| Conception et implémentation de micrologiciels. | <ul><li>C, Assembleur (Intel)</li><li>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)<li><li>Compilateur IAR</li></ul> |
-| Conception d'un API pour Windows utilisant les technologies COM. | <ul><li>C++</li><li>Win32, COM, COM+</li><li>Pocket PC, Window CE, Palm OS</li></ul> |
+| Conception et implémentation de micrologiciels. | <ul><li>C</li><li>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)</li><li>Assembleur (Intel)</li><li>Compilateur IAR</li></ul> |
+| Conception d'un API pour Windows utilisant les technologies COM. | <ul><li>C++</li><li>Win32</li><li>COM, COM+</li><li>Pocket PC, Window CE,Palm OS</li></ul> |
 | Conception et documentation d'un kit du développeur (SDK) incluant un guide de plus 120 pages. | <ul><li>Doxygen</li><li>C/C++</li><li>Win32, COM, COM+, .NET, VBA</li><li>National Instrument LabView</li><li>MatLab</li></ul> |
 | Banc de test complet pour la production ainsi que débogage des unités produites. | <ul><li>C++</li><li>COM</li><li>National Instrument LabView</li></ul> |
 

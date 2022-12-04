@@ -1,12 +1,3 @@
-
-
-# Développeur généraliste avec spécialisation en embarqué
-
-- 👋  Bonjour, je me nomme Nicolas Momtmarquette ([English version](en_ca/README.md))
-- 👀  Je suis principalement intéressé de travailler avec du hardware, les projets embarqués, l'assemnleur, en fait presque tout ce qui est bas niveau!
-- 🌱  Dernièrement je me suis finalement mis (un peu) au JavaScript & TypeScript (parce que!)
-- 📫  Vous pouvez aussi me trouver sur [LinkedIn](https://ca.linkedin.com/in/nicolas-montmarquette-16a50853/fr)
-
 # Sommaire
 | Années | Projets | Technologies |
 |:------:|---------|--------------|
@@ -28,7 +19,4 @@
 | **2000-2009** | [FlexComp Infiniti](./fr_ca/2000-2009-flexcomp-infiniti.md) | C, Assembleur, µC Atmel, Intel, Qualcomm, IAR, C++, Win32, COM, COM+, .NET, VBA, Pocket PC, Windows CE, Palm OS, LabView, MatLab |
 | **1997-2000** | [Machinerie](./fr_ca/1997-2000-machinerie.md) | C, C++, Assembleur, µC industriels Zilog, Win32, Delphi, Windows |
 
-<!---
-nmontmarquette/nmontmarquette is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+------------------------------------------------------------------
