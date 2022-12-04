@@ -1,5 +1,7 @@
-personal_ws-1.1 fr 113 
+personal_ws-1.1 fr 121 
+AWS
 Afrique
+Amazon
 Android
 App-Store
 Apple
@@ -13,17 +15,20 @@ CD
 CMake
 COM
 CSR
+Cloud
 Component
 Cypress
 DDK
 DJango
 Delphi
 Django
+Dockerization
 Doxygen
 Débogage
 ECS
 Entity
 FlexComp
+GDPR
 Github
 Google
 HCI
@@ -42,6 +47,7 @@ Mathworks
 Microcontroleurs
 Microcontrôleurs
 Microsoft
+MongoDB
 Objective-C
 Olimex
 PC
@@ -71,6 +77,7 @@ UPS
 USB
 USD
 VBA
+Visual
 WDK
 Web
 Weighpack
@@ -94,6 +101,7 @@ implémentation
 kernel
 l'API
 l'iPhone
+macOS
 microampères
 microcontrôleur
 micrologiciel

@@ -16,12 +16,9 @@
             </task>
         </tasks>
         <technologies>
-            <technology>C/C++</technology>
-            <technology>Make</technology>
-            <technology>CMake</technology>
+            <technology>C/C++, GDB, CMake</technology>
             <technology>Python</technology>
-            <technology>Jenkins</technology>
-            <technology>Github Actions</technology>
+            <technology>Jenkins, Github Actions</technology>
         </technologies>
         <links>
             <link>À venir en janvier 2023!</link>
@@ -40,11 +37,10 @@
             </task>
         </tasks>
         <technologies>
-            <technology>C/C++</technology>
+            <technology>C/C++, GDB</technology>
             <technology>Linux</technology>
             <technology>bash</technology>
             <technology>Docker</technology>
-            <technology>GDB</technology>
             <technology>Python</technology>
         </technologies>
     </project>
@@ -70,17 +66,14 @@
             </task>
         </tasks>
         <technologies>
-            <technology>C/C++</technology>
+            <technology>C/C++, CMake</technology>
             <technology>Entity Component System (ECS)</technology>
             <technology>Standard USD (Pixart)</technology>
             <technology>Forge Data</technology>
-            <technology>bash</technology>
             <technology>Python</technology>
             <technology>TypeScript</technology>
             <technology>Go (Google)</technology>
-            <technology>CMake</technology>
-            <technology>Jenkins</technology>
-            <technology>Github Actions</technology>
+            <technology>Jenkins, Github Actions</technology>
         </technologies>
         <details>
             Ayant bonne réputation auprès de ce client, le responsable de ce projet a spécifiquement demandé mes services à mon employeur Spiria.
@@ -135,6 +128,32 @@
         </technologies>
     </project>
     <project>
+        <name>GDPR</name>
+        <years>2018-2019</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Documentation de la structure des données d'une application Web.</description>
+            </task>
+            <task>
+                <description>Conception d'un système de purge des données personnelles d'usagés faisant une demande GDPR.</description>
+            </task>
+            <task>
+                <description>Migrations et mise à jour de composantes d'une application Web .NET.</description>
+            </task>
+            <task>
+                <description>Conception d'un API Python pour faire la gestion manuelle des cas particuliers.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>Amazon Cloud Services (AWS)</technology>
+            <technology>Python</technology>
+            <technology>MongoDB</technology>
+            <technology>Linux</technology>
+            <technology>C++, Visual Studio</technology>
+        </technologies>
+    </project>
+    <project>
         <name>"RaaS"</name>
         <years>2017-2018</years>
         <employer>Spiria</employer>
@@ -152,6 +171,28 @@
 
             Ma tâche était donc d'implémenter les appels services de ma version en utilisant le service Azure Batch de Microsoft.
         </details>
+    </project>
+    <project>
+        <name>Production Vidéo</name>
+        <years>2016-2018</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Maintenance générale d'une application de production vidéo.</description>
+            </task>
+            <task>
+                <description>Dockerization d'une application existante de production vidéo.</description>
+            </task>
+            <task>
+                <description>Conception d'un prototype de ferme de rendu interne.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C++, CMake, GDB</technology>
+            <technology>Python</technology>
+            <technology>Windows, macOS, Linux</technology>
+            <technology>Docker</technology>
+        </technologies>
     </project>
     <project>
         <name>"Set-up box"</name>
