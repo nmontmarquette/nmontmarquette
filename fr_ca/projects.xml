@@ -91,9 +91,53 @@
         </details>
     </project>
     <project>
-        <name>RaaS</name>
+        <name>"Archi"</name>
+        <years>2019-2020</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Déterminer la liste des requis entre l'exécution locale et distante d'une application d'architecture.</description>
+            </task>
+            <task>
+                <description>Conception et documentation d'outils en Python pour prototyper l'exécution de tâche sur la plateforme d'exécution serveur du client.</description>
+            </task>
+            <task>
+                <description>Coordonner les changements requis pour la plateforme d'exécution entre différents département.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>Python</technology>
+            <technology>Forge</technology>
+            <technology>C++, .NET, Windows</technology>
+            <technology>.NET</technology>
+        </technologies>
+    </project>
+    <project>
+        <name>Scanner 3D</name>
+        <years>2019-2019</years>
+        <employer>Spiria</employer>
+        <tasks>
+            <task>
+                <description>Confirmer la présence d'un bogue intermittent d'un pilote de scanneur 3D entre différente version de Windows.</description>
+            </task>
+            <task>
+                <description>Instrumenter et documenter la fréquence des occurrences du problème de capture.</description>
+            </task>
+            <task>
+                <description>Prototyper un correctifs.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C++</technology>
+            <technology>Windows DDK, WDK</technology>
+            <technology>Protocole USB bas niveau</technology>
+            <technology>Décodeur, analyseur USB</technology>
+        </technologies>
+    </project>
+    <project>
+        <name>"RaaS"</name>
         <years>2017-2018</years>
-        <employer>Innobec (Spiria)</employer>
+        <employer>Spiria</employer>
         <tasks>
             <task>
                 <description>Implémenter un prototype de la version "Azure Batch" d'un service de rendu à la demande.</description>

@@ -5,6 +5,7 @@ all : $(GENERATED_DIR)/project_list.md
 
 $(GENERATED_DIR)/project_list.md: fr_ca/projects.xml
 	@make spellcheck-ni
+	@echo "Regenerating '$@' ..."
 	@./generate_project_summaries --input_data_file $<
 
 # Interractive spellcheck
