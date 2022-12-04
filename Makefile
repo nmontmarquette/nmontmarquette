@@ -1,12 +1,31 @@
 GENERATED_DIR=generator
 
 .PHONY : all
-all : $(GENERATED_DIR)/project_list.md
+all : \
+	$(GENERATED_DIR)/project_list.md \
+	$(GENERATED_DIR)/project_summary.md \
+	$(GENERATED_DIR)/projects_summary_3_cols.md \
+	$(GENERATED_DIR)/projects_summary_3_cols_with_details.md
+
+$(GENERATED_DIR)/projects_summary_3_cols.md: fr_ca/projects.xml
+	@make spellcheck-ni
+	@echo "Regenerating '$@' ..."
+	@./generate_project_summaries --three_cols --input_data_file $< --output_file projects_summary_3_cols.md
+
+$(GENERATED_DIR)/projects_summary_3_cols_with_details.md: fr_ca/projects.xml
+	@make spellcheck-ni
+	@echo "Regenerating '$@' ..."
+	@./generate_project_summaries --three_cols --details --input_data_file $< --output_file projects_summary_3_cols_with_details.md
+
+$(GENERATED_DIR)/project_summary.md: fr_ca/projects.xml
+	@make spellcheck-ni
+	@echo "Regenerating '$@' ..."
+	@./generate_project_summaries --input_data_file $< --output_file project_summary.md
 
 $(GENERATED_DIR)/project_list.md: fr_ca/projects.xml
 	@make spellcheck-ni
 	@echo "Regenerating '$@' ..."
-	@./generate_project_summaries --input_data_file $<
+	@./generate_project_list --input_data_file $<
 
 # Interractive spellcheck
 .PHONY: spellcheck

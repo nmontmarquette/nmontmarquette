@@ -7,11 +7,16 @@ from generator.parser import DataParser
 
 def main():
     parser = argparse.ArgumentParser()
-    #parser.add_argument("input_data_file", nargs="?", type=argparse.FileType("r"), default=sys.stdin)
     parser.add_argument("--input_data_file", default="fr_ca/projects.xml", type=str)
+    parser.add_argument("--output_file", type=str)
+    parser.add_argument("-3", "--three_cols", action="store_true")
+    parser.add_argument("--details", action="store_true", help="Add an extra grouped details section at the end of the document.")
     args = parser.parse_args()
     parser = DataParser(args.input_data_file)
-    parser.generate_projects_summary(os.path.join("generated","projects_summary.md"))
+    if args.three_cols:
+        parser.generate_projects_summary_3_columns(os.path.join("generated", args.output_file), args.details)
+    else:
+        parser.generate_projects_summary(os.path.join("generated", args.output_file), args.details)
 
 if __name__ == '__main__':
     main()

@@ -60,7 +60,17 @@ class DataParser():
 
         return self._projects
 
-    def generate_projects_summary(self, filename):
+    def _generate_grouped_details_section(self, file, projects):
+        file.write("# Notes et détails\n")
+        for project in projects:
+            if project.details:
+                file.write("\n")
+                file.write(f"## {project.employer} - {project.name} ({project.years})\n")
+                file.write("\n")
+                for line in project.details:
+                    file.write(f"{line}\n")
+
+    def generate_projects_summary(self, filename, details=False):
         """Generate a project list summary markdown file."""
 
         with open(filename, "w", encoding="utf-8") as file:
@@ -84,7 +94,37 @@ class DataParser():
                 tasks_str += "</ul>"
                 file.write(f"| {project.years} | {project.employer} | {project.name} | {tasks_str} | {technologies_str} |\n")
 
-    def generate_tasks_summary(self, filename):
+            if details:
+                self._generate_grouped_details_section(file, self.projects)
+
+    def generate_projects_summary_3_columns(self, filename, details=False):
+        """Generate a project list summary markdown file."""
+
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write("# Sommaire\n")
+            file.write("| Années<br>Employeur<br>Projet | Tâches | Technologies |\n")
+            file.write("|:-----------------------------:|--------|--------------|\n")
+            for project in self.projects:
+                tasks_str = "<ul>"
+
+                technologies_str = "<ul>"
+                for technology in project.technologies:
+                    technologies_str += f"<li>{technology}</li>"
+
+                for task in project.tasks:
+                    tasks_str += f"<li>{task.description}</li>"
+
+                    #for technology in task.technologies:
+                    #    technologies_str += f"<li>{technology}</li>"
+
+                technologies_str += "</ul>"
+                tasks_str += "</ul>"
+                file.write(f"| {project.years}<br>{project.employer}<br>{project.name} | {tasks_str} | {technologies_str} |\n")
+
+            if details:
+                self._generate_grouped_details_section(file, self.projects)
+
+    def generate_tasks_summary(self, filename, details=False):
         """Generates a task list summary markdown file."""
 
         with open(filename, "w", encoding="utf-8") as file:
