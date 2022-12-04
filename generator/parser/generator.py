@@ -61,6 +61,7 @@ class DataParser():
         return self._projects
 
     def _generate_grouped_details_section(self, file, projects):
+        file.write("\n<br>\n\n")
         file.write("# Notes et détails\n")
         for project in projects:
             if project.details:
@@ -69,6 +70,11 @@ class DataParser():
                 file.write("\n")
                 for line in project.details:
                     file.write(f"{line}\n")
+
+                file.write("\n")
+                file.write("------------------------------------------------------------------\n")
+                file.write("\n")
+
 
     def generate_projects_summary(self, filename, details=False):
         """Generate a project list summary markdown file."""

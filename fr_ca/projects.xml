@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
+        <name>Disnat Python API</name>
+        <years>2021-2022</years>
+        <employer>Personnel</employer>
+        <tasks>
+            <task>
+                <description>Rétro-ingénierie de l'API de Disnat en Python.</description>
+            </task>
+            <task>
+                <description>Analyseurs grammaticaux afin d'extraire différentes statistiques sur les transactions faites.</description>
+            </task>
+            <task>
+                <description>Générateur de rapport  pour fin d'impôts (inexistant chez Desjardins).</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>Python</technology>
+            <technology>Swagger</technology>
+            <technology>Github Actions</technology>
+        </technologies>
+        <details>
+            En tant qu'utilisateur de la plateforme de transaction Disnat, j'avais plusieurs frustrations de ne pouvoir automatiser le téléchargement des transactions, la génération de rapports ainsi que retrouver peu de statistiques à même le portail. J'ai donc entrepris la rétro-ingénierie de plusieurs API afin de concevoir des outils en Python que je peux utiliser localement de façon automatisée sans avoir à cliquer encore et encore tout un tas de liens.
+        </details>
+    </project>
+    <project>
+        <name>Émulateurs 65xx pour Uzebox</name>
+        <years>2020-2022</years>
+        <employer>Personnel</employer>
+        <tasks>
+            <task>
+                <description>Conception d'un émulateur 65xx initialement en C++17.</description>
+            </task>
+            <task>
+                <description>Générateur de "stub" d'instructions à partir des spécifications publiques (Python).</description>
+            </task>
+            <task>
+                <description>Refonte de l'émulateur 65xx en assembleur Atmel.</description>
+            </task>
+            <task>
+                <description>Émulateur partiels de machines utilisant le processeur 65xx (NES, VIC-20, C64, Apple 1).</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>C/C++, CMake, GDB</technology>
+            <technology>Python</technology>
+            <technology>Assembleur (Atmel)</technology>
+            <technology>Assembleur (MOS)</technology>
+            <technology>Github Actions</technology>
+        </technologies>
+        <details>
+            Un ami à créer une [console retro-minimaliste](http://uzebox.org/index.php). Question d'y contribuer quelque chose, je me suis lancé le défi d'écrire un émulateur C64. La plateforme tourne sur un ATMega 8bit avec 4KB de RAM et 64KB de Flash.
+
+            C'est déjà un défi d'écrire un émulateur 65xx en assembleur, c'est un défi encore plus audacieux d'imaginer émuler un C64 au point de pouvoir y rouler certains exécutables. Le facteur le plus limitant étant le 4KB de RAM, ensuite le nombre de cycles disponibles par «scanline» dessiné. À l'instar du code sur Atari 2600, le programme à un budget limiter en cycles s'il veut représenter quoi que ce soit à l'écran.
+
+            Ma première version était tout en C++17, fort d'un visionnement [vidéo de Jason Turner](https://www.youtube.com/watch?v=EIKAqcLxtT0) j'avais tenté, d'implémenter qu'en C++. Malheureusement, au final, le code n'était pas assez compact ni suffisamment performant.
+
+            La seconde version quant à elle, tout assembleur Atmel, offre un gain de 300-400% sur la version C++. Cette version permet l’exécution du «kernal» et ROM Basic. Bien sûr j’ai dû y intégrer quelques optimisations spécifiques telles que les accès ROM (les plus fréquents), les accès à la page zéro ainsi qu’une table dédiée pour le décodage des instructions.
+
+            À moins d'avoir soit même fait un tel exercice de style, il est très difficile de mettre en mots la grande satisfaction de voir le code en ROM s'initialiser et ainsi de voir le curseur si familier clignoter sur son écran de télévision.
+        </details>
+        <links>
+            <link>http://uzebox.org/index.php</link>
+            <link>https://github.com/nmontmarquette/avr-65xx-emu</link>
+        </links>
+    </project>
+    <project>
         <name>"Libre!"</name>
         <years>2022-2023</years>
         <employer>Spiria</employer>
