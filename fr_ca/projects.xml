@@ -91,6 +91,25 @@
         </details>
     </project>
     <project>
+        <name>RaaS</name>
+        <years>2017-2018</years>
+        <employer>Innobec (Spiria)</employer>
+        <tasks>
+            <task>
+                <description>Implémenter un prototype de la version "Azure Batch" d'un service de rendu à la demande.</description>
+            </task>
+        </tasks>
+        <technologies>
+            <technology>Python</technology>
+            <technology>Azure Batch (compute pools)</technology>
+        </technologies>
+        <details>
+            Le mandat était d'élaborer un prototype interne de rendu à la demande avec l'option de sélectionner 4 des plateformes établies ainsi que le nouvel arrivé (à l'époque): Microsoft Azure Batch
+
+            Ma tâche était donc d'implémenter les appels services de ma version en utilisant le service Azure Batch de Microsoft.
+        </details>
+    </project>
+    <project>
         <name>"Set-up box"</name>
         <years>2016-2016</years>
         <employer>Innobec (Spiria)</employer>

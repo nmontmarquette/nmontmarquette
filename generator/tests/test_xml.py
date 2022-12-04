@@ -8,9 +8,24 @@ from generator.parser import DataParser
 class TestXml(unittest.TestCase):
     """Test class for the 'DataParser' class."""
 
+    def setUp(self) -> None:
+        self._parser = None
+        return super().setUp()
+
+    @property
+    def data_file_path(self):
+        return os.path.join("fr_ca", "projects.xml")
+
+    @property
+    def parser(self):
+        if not self._parser:
+            self._parser = DataParser(self.data_file_path)
+
+        return self._parser
+
     def test_constructor(self):
         """Simple test reading main XML data file."""
-        DataParser("projects.xml")
+        DataParser(self.data_file_path)
 
     def test_constructor_file_not_found(self):
         """Test for exception on non-existing file."""
@@ -19,14 +34,12 @@ class TestXml(unittest.TestCase):
 
     def test_property_root(self):
         """Test the 'root' property."""
-        data = DataParser("projects.xml")
-        self.assertIsNotNone(data.root)
+        self.assertIsNotNone(self.parser.root)
 
     def test_property_projects(self):
         """Test the 'projects' property."""
-        data = DataParser("projects.xml")
-        self.assertIsNotNone(data.projects)
-        for project in data.projects:
+        self.assertIsNotNone(self.parser.projects)
+        for project in self.parser.projects:
             self.assertIsNotNone(project.details)
             for line in project.details:
                 print(line)
@@ -40,20 +53,20 @@ class TestXml(unittest.TestCase):
                     self.assertIsNotNone(technology)
 
     def test_generate_tasks_summary(self):
-        data = DataParser("projects.xml")
-        data.generate_tasks_summary(os.path.join("generated","tasks_summary.md"))
+        data = DataParser(os.path.join("fr_ca", "projects.xml"))
+        self.parser.generate_tasks_summary(os.path.join("generated","tasks_summary.md"))
 
     def test_generate_projects_summary(self):
-        data = DataParser("projects.xml")
-        data.generate_projects_summary(os.path.join("generated","projects_summary.md"))
+        data = DataParser(os.path.join("fr_ca", "projects.xml"))
+        self.parser.generate_projects_summary(os.path.join("generated","projects_summary.md"))
 
     def test_generate_detailed_project_list(self):
-        data = DataParser("projects.xml")
-        data.generate_project_list(os.path.join("generated","detailed_project_list.md"), show_details=True)
+        data = DataParser(os.path.join("fr_ca", "projects.xml"))
+        self.parser.generate_project_list(os.path.join("generated","detailed_project_list.md"), show_details=True)
 
     def test_generate_project_list(self):
-        data = DataParser("projects.xml")
-        data.generate_project_list(os.path.join("generated","project_list.md"), show_details=False)
+        data = DataParser(os.path.join("fr_ca", "projects.xml"))
+        self.parser.generate_project_list(os.path.join("generated","project_list.md"), show_details=False)
 
 
 if __name__ == '__main__':

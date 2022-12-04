@@ -15,7 +15,7 @@ class Project:
         for children_node in node.find("tasks").findall("task"):
             self._tasks.append(Task(children_node))
         self._details = []
-        if node.find("details"):
+        if node.find("details") is not None:
             for line in node.find("details").text.splitlines():
                 self._details.append(line.strip())
         self._employer = node.find("employer").text
