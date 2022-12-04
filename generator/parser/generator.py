@@ -75,7 +75,6 @@ class DataParser():
                 file.write("------------------------------------------------------------------\n")
                 file.write("\n")
 
-
     def generate_projects_summary(self, filename, details=False):
         """Generate a project list summary markdown file."""
 
@@ -209,3 +208,56 @@ class DataParser():
                         file.write(f"{line}\n")
                     file.write("\n")
 
+    def generate_projects_pages(self, base_folder, use_tech_bullets=True, show_details=True):
+        """Generates individual project pages in the specified base folder."""
+
+        links = []
+        for project in self.projects:
+            filename = f"{project.years}-{project.normalized_project_name}.md"
+            filepath = os.path.join(base_folder, filename)
+            tasks_str = "<ul>"
+            with open(filepath, "w", encoding="utf-8") as file:
+
+                file.write(f"# {project.employer} - {project.name} ({project.years})\n")
+                file.write("\n")
+
+                technologies_short = project.technologies_short
+                if not technologies_short:
+                    technologies_short = "---"
+                links.append(f"| **{project.years}** | [{project.name}](./{filepath}) | {technologies_short} |")
+
+                file.write("| Tâches | Technologies |\n")
+                file.write("|--------|--------------|\n")
+
+                technologies_str = "<ul>"
+                for technology in project.technologies:
+                    technologies_str += f"<li>{technology}</li>"
+
+                for task in project.tasks:
+                    tasks_str += f"<li>{task.description}</li>"
+
+                    #for technology in task.technologies:
+                    #    technologies_str += f"<li>{technology}</li>"
+
+                technologies_str += "</ul>"
+                tasks_str += "</ul>"
+                file.write(f"| {tasks_str} | {technologies_str} |\n")
+
+                if show_details and project.details:
+                    file.write("\n")
+                    file.write("# Notes et détails\n")
+                    for line in project.details:
+                        file.write(f"{line}\n")
+
+        filename = "sommaire.md"
+        filepath = os.path.join(base_folder, filename)
+        with open(filepath, "w", encoding="utf-8") as file:
+            file.write("# Sommaire\n")
+
+            file.write("| Années | Projets | Technologies |\n")
+            file.write("|:------:|---------|--------------|\n")
+            for link in links:
+                file.write(f"{link}\n")
+
+            file.write("\n")
+            file.write("------------------------------------------------------------------\n")

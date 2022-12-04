@@ -46,6 +46,15 @@ class Project:
         return self._name
 
     @property
+    def normalized_project_name(self):
+        normalized_name = self.name.lower().replace("\"","")
+        normalized_name = normalized_name.replace(" ","-")
+        normalized_name = normalized_name.replace("!", "")
+        normalized_name = normalized_name.replace("é", "e")
+        normalized_name = normalized_name.replace("è", "e")
+        return normalized_name
+
+    @property
     def tasks(self):
         """Returns a collection of Task objects."""
         return self._tasks
