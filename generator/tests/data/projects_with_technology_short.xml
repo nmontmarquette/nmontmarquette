@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <name>Tele-Infiniti</name>
+        <years>2009-2012</years>
+        <employer>Thought Technology</employer>
+        <tasks>
+            <task>
+                <description>Conception de fonctionnalité sans fil Tele-Infiniti pour appareils d'acquisition existants.</description>
+                <technologies>
+                    <technology>C</technology>
+                    <technology>Spécification matérielle de Bluetooth</technology>
+                    <technology>Protocole USB bas-niveau (HCI)</technology>
+                    <technology>Procédure de soumission matériel auprès d'Apple</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception de nouvelles librairies et pilotes pour Windows.</description>
+                <technologies>
+                    <technology>Débogage de "kernel drivers</technology>
+                    <technology>Transfert USB "bulk" et "Isochronous"</technology>
+                    <technology>C++, Win32, Windows DDK, WDK (pilote)</technology>
+                    <technology>Procédure d'obtention d'un certificat officiel</technology>
+                    <technology>Procédure de signature auprès de Microsoft</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Conception de prototype d'applications et librairies pour plateformes mobiles.</description>
+                <technologies>
+                    <technology>C++, Objective-C, Java</technology>
+                    <technology>Android, iOS</technology>
+                    <technology>Procédure de soumission d'application au App-Store d'Apple</technology>
+                    <technology>Procédure de soumission matériel auprès d'Apple</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Banc de test complet automatisé (avec brouilleur multibande) pour instrumenter le débit ainsi que la fiabilité.</description>
+                <technologies>
+                    <technology>C++</technology>
+                    <technology>COM</technology>
+                    <technology>National Instrument LabView</technology>
+                </technologies>
+            </task>
+            <task>
+                <description>Établir la procédure d'obtention d'un certificat officiel auprès de Microsoft et Apple.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de signature de pilote auprès de Microsoft.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de signature d'application auprès d'Apple.</description>
+            </task>
+            <task>
+                <description>Établir la procédure de soumission matériel auprès d'Apple.</description>
+            </task>
+        </tasks>
+        <technologies_short>C/C++, Objective-C, Java, Kernel driver, Win32, DDK, WDK, HCI (USB), Android, iOS</technologies_short>
+        <technologies>
+            <technology>C/C++, Objective-C, Java</technology>
+            <technology>Débogage de "kernel drivers (Windows)</technology>
+            <technology>Protocole USB bas-niveau (HCI)</technology>
+            <technology>Transfert USB "bulk" et "Isochronous"</technology>
+            <technology>Win32, Windows DDK, WDK (pilote)</technology>
+            <technology>Android, iOS</technology>
+        </technologies>
+        <details>
+            Le module 'Tele-Infiniti' était essentiellement un greffon sans fil (Bluetooth) pour notre gamme de produits d'acquisitions.
+
+            Nous avons contacté plusieurs manufacturiers, assemblé et testé de nombreux prototypes, au final qu'un seul module offrait le débit nécessaire en CLASSA 1 (environ 100m).
+
+            Le micrologiciel principal ayant presque atteint son maximum (sans avoir à changer de microcontrôleur) ainsi que le peu de RAM, nous ne pouvions pas utiliser un "stack" Bluetooth existant. Nous devions utiliser la couche HCI directement, nous forçait donc à écrire notre propre pilote pour Windows puisque le pilote Bluetooth standard ne recevrait pas les échanges nécessaires.
+
+            Durant cette période, l'iPhone faisait son apparition, j'ai donc exploré et prototypé avec les plateformes Apple et Android.
+
+            Pour ce projet, spécifiquement, j'ai travaillé avec la NASA ainsi que la compagnie CSR (manufacturier de puces Bluetooth). La NASA, nous ayant commandé plusieurs systèmes d'acquisition. Durant leurs tests a été découvert un bogue très occasionnel sur lequel nous devions travailler. Ainsi, environ, une fois par 24 millions de paquets il y avait conflit entre deux récepteurs Bluetooth brisant trame causant des artefacts dans les données capturées.
+        </details>
+        <links>
+            <link>https://thoughttechnology.com/tele-infiniti-compact-flash-t9600/</link>
+        </links>
+    </project>
+</projects>

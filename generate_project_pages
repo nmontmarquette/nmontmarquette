@@ -13,7 +13,8 @@ def main():
     parser.add_argument("--details", action="store_true", help="Add an extra grouped details section at the end of the document.")
     args = parser.parse_args()
     parser = DataParser(args.input_data_file)
-    parser.generate_projects_pages(args.output_dir,  args.details)
+    #parser.generate_projects_pages(args.output_dir,  args.details)
+    parser.generate_projects_pages2(args.output_dir,  args.details)
 
 
 if __name__ == '__main__':

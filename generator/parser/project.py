@@ -20,7 +20,7 @@ class Project:
                 self._details.append(line.strip())
         self._employer = node.find("employer").text
         self._name = node.find("name").text
-        if node.find("technologies_short"):
+        if node.find("technologies_short") is not None:
             self._technologies_short = node.find("technologies_short").text
         else:
             self._technologies_short = None

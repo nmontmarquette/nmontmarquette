@@ -42,7 +42,6 @@
                 <description>Émulateur partiels de machines utilisant le processeur 65xx (NES, VIC-20, C64, Apple 1).</description>
             </task>
         </tasks>
-        <technologies_short>C/C++, CMake, GDB, Python, Assembleur, Github Actions</technologies_short>
         <technologies>
             <technology>C/C++, CMake, GDB</technology>
             <technology>Python</technology>
@@ -131,7 +130,6 @@
                 <description>Instrumentation des performances des services distants (TypeScript).</description>
             </task>
         </tasks>
-        <technologies_short>C/C++, CMake, ECS, USD (Pixar), Forge Data, Python, TypeScript, Go, Jenkins, Github Actions</technologies_short>
         <technologies>
             <technology>C/C++, CMake</technology>
             <technology>Entity Component System (ECS)</technology>
@@ -586,7 +584,6 @@
                 </technologies>
             </task>
         </tasks>
-        <technologies_short>C/C++, Assembleur, µC Atmel, Intel, Qualcomm, IAR, Win32/COM/COM+, VBA, Windows CE, Palm OS, LabView, MatLab</technologies_short>
         <technologies>
             <technology>C, Assembleur (Intel)</technology>
             <technology>Microcontrôleurs Atmel, Intel, Qualcomm (SnapDragon)</technology>
@@ -597,7 +594,7 @@
             <technology>MatLab (Mathworks)</technology>
         </technologies>
         <details>
-            Notre interface USB maison représentait un certain défi d'optimisation. En effet, il n'y avait que peu de cycle disponible par transaction USB. Bien que ça augmentait le coût, j'ai dû suggérer une variante où la plupart des instructions prenaient 6 cycles machines plutôt que le 12 avec la version de base du microcontrôleur, nous permettant de descendre sous la barre des 100% avec une utilisation processeur de 95-98 %
+            L'interface USB représentait un défi d'optimisation. En effet, il n'y avait que peu de cycle disponible par transaction USB. Bien que ça augmentait le coût, j'ai dû suggérer une variante où la plupart des instructions prenaient 6 cycles machines plutôt que le 12 avec la version de base du microcontrôleur, nous permettant de descendre sous la barre des 100% avec une utilisation processeur de 95-98 %
 
             Le travail impliquait aussi beaucoup d'outils et de code nécessaires aux testages et débogage des unités produites par notre département de production.
 
