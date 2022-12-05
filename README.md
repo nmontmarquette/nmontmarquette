@@ -2,8 +2,8 @@
 
 # Développeur généraliste avec spécialisation embarqué
 
-- 👋  Bonjour, je me nomme Nicolas Momtmarquette ([English version](en_ca/README.md))
-- 👀  Je suis principalement intéressé de travailler avec du hardware, les projets embarqués, l'assemnleur, en fait presque tout ce qui est bas niveau!
+- 👋  Bonjour, je me nomme Nicolas ([English version](en_ca/README.md))
+- 👀  Je suis principalement intéressé de travailler avec du "hardware", des projets embarqués, l'assembleur, en fait presque tout ce qui est bas niveau!
 - 📫  Vous pouvez aussi me trouver sur [LinkedIn](https://ca.linkedin.com/in/nicolas-montmarquette-16a50853/fr)
 
 # Sommaire

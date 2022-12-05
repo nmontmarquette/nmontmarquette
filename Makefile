@@ -37,6 +37,7 @@ project_pages: fr_ca/projects.xml
 .PHONY: spellcheck
 spellcheck:
 	aspell --lang fr --personal=./aspell.fr_CA.pws --repl=./aspell.fr_CA.prepl --add-filter sgml check fr_ca/projects.xml
+	aspell --lang fr --personal=./aspell.fr_CA.pws --repl=./aspell.fr_CA.prepl --add-filter sgml check README.md
 
 # Non-interractive spellchecker
 .PHONY: spellcheck-ni
